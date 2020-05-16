@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <Project msg="Welcome to Your Vue.js App"/>
+    <ProjectList id="1" ticketId="HOGE-1111" project-name="Hoge Project"/>
   </div>
 </template>
 
 <script>
-import Project from './components/Project.vue'
+import ProjectList from './components/ProjectList.vue'
 
 export default {
   name: 'App',
   components: {
-    Project
+    ProjectList
   }
 }
 </script>
