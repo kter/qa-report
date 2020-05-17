@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    aaaaaa
+    <!--
     <ProjectList id="1" ticketId="HOGE-1111" project-name="Hoge Project"/>
+    -->
+    <router-link to="/project/1">aaa</router-link>
+    <router-view></router-view>
+    bbb
   </div>
 </template>
 
 <script>
-import ProjectList from './components/ProjectList.vue'
+// import ProjectList from './components/ProjectList.vue'
 
 export default {
   name: 'App',
   components: {
-    ProjectList
+    // ProjectList
   }
 }
 </script>

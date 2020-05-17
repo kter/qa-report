@@ -1,17 +1,23 @@
 <template>
-  <div class="hello">
-    <h1>{{ id }}</h1>
-    <h3>{{ ticketId }}</h3>
-    <h3>{{ projectName}}</h3>
-  </div>
+  <a href="">
+    <div class="hello">
+      <h1>{{ id }}</h1>
+      <h3>{{ ticketId }}</h3>
+      <h3>{{ projectName}}</h3>
+    </div>
+  </a>
 </template>
 
 <script>
 export default {
   props: {
-    id: String,
     ticketId: String,
     projectName: String
+  },
+  computed: {
+    id () {
+        return this.$route.params.id
+    }
   }
 }
 </script>
